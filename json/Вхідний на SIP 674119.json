@@ -1,0 +1,444 @@
+{
+  "id": 1,
+  "destination_number": [
+    "674119"
+  ],
+  "name": "Вхідний на SIP 674119",
+  "disabled": false,
+  "domain": "steeldrum.webitel.org.ua",
+  "fs_timezone": {
+    "id": "Europe/Kiev",
+    "name": "Europe/Kiev"
+  },
+  "callflow": [
+    {
+      "answer": "200 OK",
+      "_id": "f5ed3281-f350-47e6-88f5-7075df2b5c0d"
+    },
+    {
+      "sleep": 1000,
+      "_id": "0c5517a3-5f14-48f8-8f88-f7cac45e9e38"
+    },
+    {
+      "playback": {
+        "files": [
+          {
+            "name": "hi.wav",
+            "type": "wav"
+          }
+        ]
+      },
+      "_id": "b2329851-4ff8-4b0c-96bc-e8b7e395d333"
+    },
+    {
+      "bridge": {
+        "strategy": "multiple",
+        "codecs": [],
+        "parameters": [],
+        "endpoints": [
+          {
+            "name": "100",
+            "type": "user",
+            "parameters": []
+          }
+        ]
+      },
+      "_id": "1211bd08-f8ea-41ac-9e9e-98d44c50570a"
+    },
+    {
+      "hangup": "NORMAL_CLEARING",
+      "_id": "2c6375e7-78d3-4550-bbd1-ce1535e12cc8"
+    }
+  ],
+  "callflow_on_disconnect": [],
+  "cf_diagram": {
+    "id": "453b975e-85dc-724e-df50-cba46aed570f",
+    "offsetX": 0,
+    "offsetY": 0,
+    "zoom": 100,
+    "links": [
+      {
+        "id": "431009bc-9606-43af-a14f-25b60f12f255",
+        "_class": "ExtendedLinkModel",
+        "selected": false,
+        "type": "default",
+        "source": "425d5cbc-7e2e-4e96-b355-17f6e62b3c5b",
+        "sourcePort": "e95c3d44-67e7-4aaf-bfbf-45680f22466c",
+        "target": "f5ed3281-f350-47e6-88f5-7075df2b5c0d",
+        "targetPort": "ae976169-1a35-4f98-8923-cb359d864cdc",
+        "points": [
+          {
+            "id": "45e75832-1b35-4a1d-afb9-5983e8e408bc",
+            "_class": "PointModel",
+            "selected": false,
+            "x": 113.5,
+            "y": 86.5
+          },
+          {
+            "id": "7a9de3f1-dc3d-4d3b-beb1-e7206eaede89",
+            "_class": "PointModel",
+            "selected": false,
+            "x": 151.5,
+            "y": 123.5
+          }
+        ],
+        "extras": {}
+      },
+      {
+        "id": "d31a69ce-cd05-4eef-8960-5d07d1b7ee1d",
+        "_class": "ExtendedLinkModel",
+        "selected": false,
+        "type": "default",
+        "source": "f5ed3281-f350-47e6-88f5-7075df2b5c0d",
+        "sourcePort": "eb878381-eeb9-4497-b91c-4ac5cee5a972",
+        "target": "0c5517a3-5f14-48f8-8f88-f7cac45e9e38",
+        "targetPort": "db9ed8f5-a4ed-4aa3-8ec4-a250ddec4a8d",
+        "points": [
+          {
+            "id": "72a23ea8-1540-4449-8ce0-84b4af0a59e4",
+            "_class": "PointModel",
+            "selected": false,
+            "x": 232.515625,
+            "y": 123.5
+          },
+          {
+            "id": "02004312-6b88-4d3c-9149-ed1aaca66f7b",
+            "_class": "PointModel",
+            "selected": false,
+            "x": 250.5,
+            "y": 199.5
+          }
+        ],
+        "extras": {}
+      },
+      {
+        "id": "352f8bc1-acd6-4b9c-8f82-2a4e25fae2b7",
+        "_class": "ExtendedLinkModel",
+        "selected": false,
+        "type": "default",
+        "source": "0c5517a3-5f14-48f8-8f88-f7cac45e9e38",
+        "sourcePort": "c59dd596-ae18-4205-a035-2b15ee1e1cb2",
+        "target": "b2329851-4ff8-4b0c-96bc-e8b7e395d333",
+        "targetPort": "5d070d77-7cfe-4b88-8248-490f8a53fcf9",
+        "points": [
+          {
+            "id": "b6311ce7-bbca-45c6-9b10-e1d6ef904053",
+            "_class": "PointModel",
+            "selected": false,
+            "x": 331.515625,
+            "y": 199.5
+          },
+          {
+            "id": "28dc2f0d-a0bd-4806-8033-51e6c6988f2c",
+            "_class": "PointModel",
+            "selected": false,
+            "x": 369.5,
+            "y": 235.5
+          }
+        ],
+        "extras": {}
+      },
+      {
+        "id": "7d43af90-45ff-4322-a5cd-e71f6ecdc7bd",
+        "_class": "ExtendedLinkModel",
+        "selected": false,
+        "type": "default",
+        "source": "b2329851-4ff8-4b0c-96bc-e8b7e395d333",
+        "sourcePort": "850ef6e7-5e2d-4b57-afbf-564d0238bbef",
+        "target": "1211bd08-f8ea-41ac-9e9e-98d44c50570a",
+        "targetPort": "13221a82-1e9e-4e68-a716-df1d2eb70216",
+        "points": [
+          {
+            "id": "9afd3ccb-6ab9-498c-ba4c-18c97464e7b6",
+            "_class": "PointModel",
+            "selected": false,
+            "x": 450.515625,
+            "y": 235.5
+          },
+          {
+            "id": "d7d886f8-641f-4502-87ae-4c4d262ae9b8",
+            "_class": "PointModel",
+            "selected": false,
+            "x": 482.5,
+            "y": 303.5
+          }
+        ],
+        "extras": {}
+      },
+      {
+        "id": "de1ef489-a8a5-4e8c-8127-c81eeab4dff4",
+        "_class": "ExtendedLinkModel",
+        "selected": false,
+        "type": "default",
+        "source": "1211bd08-f8ea-41ac-9e9e-98d44c50570a",
+        "sourcePort": "15b5b4c7-988c-4f23-aa8d-741606851de7",
+        "target": "2c6375e7-78d3-4550-bbd1-ce1535e12cc8",
+        "targetPort": "a40d823d-a55e-423b-9ad4-6f5a215c96ab",
+        "points": [
+          {
+            "id": "0310f9b2-5e9f-4edb-a28d-c94337e1412c",
+            "_class": "PointModel",
+            "selected": false,
+            "x": 563.515625,
+            "y": 303.5
+          },
+          {
+            "id": "d025aec0-3e1b-4b82-bd1c-1b174db24bc0",
+            "_class": "PointModel",
+            "selected": false,
+            "x": 593.5,
+            "y": 330.5
+          }
+        ],
+        "extras": {}
+      }
+    ],
+    "nodes": [
+      {
+        "id": "425d5cbc-7e2e-4e96-b355-17f6e62b3c5b",
+        "_class": "StartNodeModel",
+        "selected": false,
+        "type": "start",
+        "x": 23,
+        "y": 29,
+        "extras": {},
+        "ports": [
+          {
+            "id": "e95c3d44-67e7-4aaf-bfbf-45680f22466c",
+            "_class": "DefaultPortModel",
+            "selected": false,
+            "name": "output",
+            "parentNode": "425d5cbc-7e2e-4e96-b355-17f6e62b3c5b",
+            "links": [
+              "431009bc-9606-43af-a14f-25b60f12f255"
+            ],
+            "in": false,
+            "label": "Out"
+          }
+        ],
+        "name": "Start",
+        "color": "rgb(215, 225, 239)"
+      },
+      {
+        "id": "f5ed3281-f350-47e6-88f5-7075df2b5c0d",
+        "_class": "AnswerNodeModel",
+        "selected": false,
+        "type": "answer",
+        "x": 142,
+        "y": 66,
+        "extras": {
+          "answer": "200 OK",
+          "_id": "f5ed3281-f350-47e6-88f5-7075df2b5c0d"
+        },
+        "ports": [
+          {
+            "id": "eb878381-eeb9-4497-b91c-4ac5cee5a972",
+            "_class": "DefaultPortModel",
+            "selected": false,
+            "name": "output",
+            "parentNode": "f5ed3281-f350-47e6-88f5-7075df2b5c0d",
+            "links": [
+              "d31a69ce-cd05-4eef-8960-5d07d1b7ee1d"
+            ],
+            "in": false,
+            "label": "Out"
+          },
+          {
+            "id": "ae976169-1a35-4f98-8923-cb359d864cdc",
+            "_class": "DefaultPortModel",
+            "selected": false,
+            "name": "input",
+            "parentNode": "f5ed3281-f350-47e6-88f5-7075df2b5c0d",
+            "links": [
+              "431009bc-9606-43af-a14f-25b60f12f255"
+            ],
+            "in": true,
+            "label": "In"
+          }
+        ],
+        "name": "Answer",
+        "color": "rgb(114, 128, 150)"
+      },
+      {
+        "id": "0c5517a3-5f14-48f8-8f88-f7cac45e9e38",
+        "_class": "SleepNodeModel",
+        "selected": false,
+        "type": "sleep",
+        "x": 241,
+        "y": 142,
+        "extras": {
+          "sleep": 1000,
+          "_id": "0c5517a3-5f14-48f8-8f88-f7cac45e9e38"
+        },
+        "ports": [
+          {
+            "id": "c59dd596-ae18-4205-a035-2b15ee1e1cb2",
+            "_class": "DefaultPortModel",
+            "selected": false,
+            "name": "output",
+            "parentNode": "0c5517a3-5f14-48f8-8f88-f7cac45e9e38",
+            "links": [
+              "352f8bc1-acd6-4b9c-8f82-2a4e25fae2b7"
+            ],
+            "in": false,
+            "label": "Out"
+          },
+          {
+            "id": "db9ed8f5-a4ed-4aa3-8ec4-a250ddec4a8d",
+            "_class": "DefaultPortModel",
+            "selected": false,
+            "name": "input",
+            "parentNode": "0c5517a3-5f14-48f8-8f88-f7cac45e9e38",
+            "links": [
+              "d31a69ce-cd05-4eef-8960-5d07d1b7ee1d"
+            ],
+            "in": true,
+            "label": "In"
+          }
+        ],
+        "name": "Sleep",
+        "color": "rgb(114, 128, 150)"
+      },
+      {
+        "id": "b2329851-4ff8-4b0c-96bc-e8b7e395d333",
+        "_class": "PlaybackNodeModel",
+        "selected": true,
+        "type": "playback",
+        "x": 360,
+        "y": 178,
+        "extras": {
+          "playback": {
+            "files": [
+              {
+                "name": "hi.wav",
+                "type": "wav"
+              }
+            ]
+          },
+          "_id": "b2329851-4ff8-4b0c-96bc-e8b7e395d333"
+        },
+        "ports": [
+          {
+            "id": "850ef6e7-5e2d-4b57-afbf-564d0238bbef",
+            "_class": "DefaultPortModel",
+            "selected": false,
+            "name": "output",
+            "parentNode": "b2329851-4ff8-4b0c-96bc-e8b7e395d333",
+            "links": [
+              "7d43af90-45ff-4322-a5cd-e71f6ecdc7bd"
+            ],
+            "in": false,
+            "label": "Out"
+          },
+          {
+            "id": "5d070d77-7cfe-4b88-8248-490f8a53fcf9",
+            "_class": "DefaultPortModel",
+            "selected": false,
+            "name": "input",
+            "parentNode": "b2329851-4ff8-4b0c-96bc-e8b7e395d333",
+            "links": [
+              "352f8bc1-acd6-4b9c-8f82-2a4e25fae2b7"
+            ],
+            "in": true,
+            "label": "In"
+          }
+        ],
+        "name": "Playback",
+        "color": "rgb(114, 128, 150)"
+      },
+      {
+        "id": "1211bd08-f8ea-41ac-9e9e-98d44c50570a",
+        "_class": "BridgeNodeModel",
+        "selected": false,
+        "type": "bridge",
+        "x": 473,
+        "y": 246,
+        "extras": {
+          "bridge": {
+            "strategy": "multiple",
+            "codecs": [],
+            "parameters": [],
+            "endpoints": [
+              {
+                "name": "100",
+                "type": "user",
+                "parameters": []
+              }
+            ]
+          },
+          "_id": "1211bd08-f8ea-41ac-9e9e-98d44c50570a"
+        },
+        "ports": [
+          {
+            "id": "15b5b4c7-988c-4f23-aa8d-741606851de7",
+            "_class": "DefaultPortModel",
+            "selected": false,
+            "name": "output",
+            "parentNode": "1211bd08-f8ea-41ac-9e9e-98d44c50570a",
+            "links": [
+              "de1ef489-a8a5-4e8c-8127-c81eeab4dff4"
+            ],
+            "in": false,
+            "label": "Out"
+          },
+          {
+            "id": "13221a82-1e9e-4e68-a716-df1d2eb70216",
+            "_class": "DefaultPortModel",
+            "selected": false,
+            "name": "input",
+            "parentNode": "1211bd08-f8ea-41ac-9e9e-98d44c50570a",
+            "links": [
+              "7d43af90-45ff-4322-a5cd-e71f6ecdc7bd"
+            ],
+            "in": true,
+            "label": "In"
+          }
+        ],
+        "name": "Bridge",
+        "color": "rgb(114, 128, 150)"
+      },
+      {
+        "id": "2c6375e7-78d3-4550-bbd1-ce1535e12cc8",
+        "_class": "HangupNodeModel",
+        "selected": false,
+        "type": "hangup",
+        "x": 584,
+        "y": 273,
+        "extras": {
+          "hangup": "NORMAL_CLEARING",
+          "_id": "2c6375e7-78d3-4550-bbd1-ce1535e12cc8"
+        },
+        "ports": [
+          {
+            "id": "e801c2ec-0099-46dd-9354-84dfd1df7bcd",
+            "_class": "DefaultPortModel",
+            "selected": false,
+            "name": "output",
+            "parentNode": "2c6375e7-78d3-4550-bbd1-ce1535e12cc8",
+            "links": [],
+            "in": false,
+            "label": "Out"
+          },
+          {
+            "id": "a40d823d-a55e-423b-9ad4-6f5a215c96ab",
+            "_class": "DefaultPortModel",
+            "selected": false,
+            "name": "input",
+            "parentNode": "2c6375e7-78d3-4550-bbd1-ce1535e12cc8",
+            "links": [
+              "de1ef489-a8a5-4e8c-8127-c81eeab4dff4"
+            ],
+            "in": true,
+            "label": "In"
+          }
+        ],
+        "name": "Hangup",
+        "color": "rgb(114, 128, 150)"
+      }
+    ]
+  },
+  "call_count": "0",
+  "version": 2,
+  "description": "",
+  "debug": null
+}
