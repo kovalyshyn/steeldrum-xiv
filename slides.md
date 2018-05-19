@@ -44,7 +44,7 @@
 #
 ### 00:08:00
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ {.bash}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ {.bash .numberLines}
 cd /opt
 sudo git clone https://github.com/webitel/orchestration.git
 cd orchestration
@@ -63,7 +63,7 @@ ufw allow webitel
 #
 ### 00:11:00
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ {.bash}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ {.bash .numberLines}
 vi env/environment
 cp /opt/orchestration/etc/cron.d/webitel /etc/cron.d/
 ./bin/reebot.sh
@@ -82,12 +82,15 @@ cp /opt/orchestration/etc/cron.d/webitel /etc/cron.d/
 #
 ### 00:13:00
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ {.bash}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ {.bash .numberLines}
 ./bin/bootstrap.sh letsencrypt
 vi env/environment
 ./bin/reebot.sh
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+#
+### 00:15:00 
 
+![Ліцензіємо сервер](res/lic.gif)
 
 #
