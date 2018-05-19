@@ -122,16 +122,16 @@ vi env/environment
 - Зареєструвати SIP телефон
 - [Вхідна маршрутизація](json/in.json)
 - [Вихідна маршрутизація](json/out.json)
-- *+380 89 120 5014*
+
+# +380 89 120 5014
 
 # Дякую за увагу!
 
-Telegram: @webitel
-
-v.kovalyshyn@webitel.com
+    Telegram: @webitel
+    v.kovalyshyn (at) webitel.com
 
 # PS
 
 Для одержання безкоштовної ліцензії та дотакових матеріалів - напишіть запит на мій Email у вільній формі :-)
 
-v.kovalyshyn@webitel.com
+### v.kovalyshyn (at) webitel.com
