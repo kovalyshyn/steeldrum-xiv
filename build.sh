@@ -7,4 +7,4 @@ if [ ! -d reveal.js ]; then
 fi
 pandoc -s --highlight-style zenburn -i -t revealjs slides.md -o index.html
 
-#open index.html
+open index.html
