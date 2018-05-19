@@ -4,6 +4,7 @@
 
 - git
 - pandoc
+- cowsay
 
 ## Run
 
